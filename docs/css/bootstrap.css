@@ -6139,7 +6139,7 @@ button.bg-danger:focus {
 }
 .bg-light2 {
   background-color: #e6e6e6 !important;
-    margin-top: 0px;
+    margin-top: -1px;
     float: right;
 }
     

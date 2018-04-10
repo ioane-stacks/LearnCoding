@@ -9,7 +9,7 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -19,7 +19,7 @@ img {vertical-align: middle;}
 @media (min-width: 840px) {
 .image1 {
   margin-bottom: 20px;
-  background-image: url("cover1.jpg");
+  background-image: url("../Images/cover1.jpg");
   background-size: cover;
   cursor: pointer;
   height: 110px;
@@ -38,7 +38,7 @@ img {vertical-align: middle;}
 }
 @media (min-width: 840px) {
 .image2 {
-  background-image: url("cover2.jpg");
+  background-image: url("../Images/cover2.jpg");
   background-size: cover;
   cursor: pointer;
   height: 125px;
@@ -56,7 +56,7 @@ img {vertical-align: middle;}
 }
 @media (min-width: 840px) {
 .image3 {
-  background-image: url("cover3.jpg");
+  background-image: url("../Images/cover3.jpg");
   background-size: cover;
   cursor: pointer;
   height: 110px;

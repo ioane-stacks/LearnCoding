@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>LearnCoding</title>
+        <link rel="stylesheet" href="css/bootstrap-reboot.css">
+        <link rel="stylesheet" href="slideShow.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+        <header>
+                <div class="headerImage">
+                    <div class="logo logoNameFont"><a href="index.html">LearnCoding</a></div>
+                    
+                    
+                    
+                    <nav id="willDown" class="navbar navbar-expand-lg navbar-light bg-light2" >
+                        <button onclick="navControl()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item navBarCTL">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item navBarCTL">
+                                    <a class="nav-link" href="#">Tutorials</a>
+                                </li>
+                                <li class="nav-item navBarCTL">
+                                    <a class="nav-link" href="#">Examples</a>
+                                </li>
+                                <li class="nav-item navBarCTL">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item navBarCTL">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+        </header>
+        <div class="container-fluid">
+            <div class="slideshow-container">
+
+<div class="mySlides fade000">
+  <img src="cover1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade000">
+  <img src="cover2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade000">
+  <img src="cover3.jpg" style="width:100%">
+</div>
+</div>
+<br>
+
+<div style="text-align:center; margin-top: -190px;">
+  <span class="image1" onclick="currentSlide(1)"></span> 
+  <span class="image2" onclick="currentSlide(2)"></span> 
+  <span class="image3" onclick="currentSlide(3)"></span> 
+</div>
+        </div>
+        
+        
+        
+        <hgroup>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            </hgroup>
+        <hgroup>
+        <script>
+var slideIndex = 2;
+showSlides(slideIndex);
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var imageSize1 = document.getElementsByClassName("image1");
+  var imageSize2 = document.getElementsByClassName("image2");
+  var imageSize3 = document.getElementsByClassName("image3");
+
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+    
+}
+</script>
+            </hgroup>
+        <hgroup>
+        <script>
+            function navControl() {
+            var thisDown = document.getElementById("willDown").style;
+                if(thisDown.marginTop === "50px") {
+                    thisDown.marginTop = "0px";
+                    thisDown.float = "right";
+                }
+                else {
+                    thisDown.marginTop = "50px";
+                    thisDown.float = "left";
+                }
+            }
+        </script>
+            </hgroup>
+    </body>
+</html>

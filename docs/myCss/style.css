@@ -51,6 +51,7 @@ body {
     height: 200px;
 }
 /*NAVBAR MEDIAS*/
+
 @media (min-width: 500px) {
     .navbar {
             padding: .5rem 2% !important;

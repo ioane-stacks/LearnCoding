@@ -15,8 +15,70 @@ img {vertical-align: middle;}
   border-radius: 3px 0 0 3px;
 }
 
+@media (min-width: 630px){
+        .image1 {
+  margin-bottom: 20px;
+  background-image: url("../Images/cover1.jpg");
+  background-size: cover;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  margin: 0px 2px;
+    margin-right: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+  background-color: #bbb;
+  box-shadow: 0 0 5px rgba(255,255,255,0.3);
+  position:relative;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  z-index: 1;
+        }
+    }
 
-@media (min-width: 840px) {
+@media (min-width: 630px){
+        .image2 {
+  margin-bottom: 20px;
+  background-image: url("../Images/cover2.jpg");
+  background-size: auto;
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  margin: 0px 2px;
+    margin-right: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+  background-color: #bbb;
+  box-shadow: 0 0 5px rgba(255,255,255,0.3);
+  position:relative;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  z-index: 1;
+        }
+    }
+
+@media (min-width: 630px){
+        .image3 {
+  margin-bottom: 20px;
+  background-image: url("../Images/cover3.jpg");
+  background-size: cover;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  margin: 0px 2px;
+    margin-right: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+  background-color: #bbb;
+  box-shadow: 0 0 5px rgba(255,255,255,0.3);
+  position:relative;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  z-index: 1;
+        }
+    }
+
+@media (min-width: 960px) {
 .image1 {
   margin-bottom: 20px;
   background-image: url("../Images/cover1.jpg");
@@ -36,7 +98,7 @@ img {vertical-align: middle;}
   z-index: 1;
 }
 }
-@media (min-width: 840px) {
+@media (min-width: 960px) {
 .image2 {
   background-image: url("../Images/cover2.jpg");
   background-size: cover;
@@ -54,7 +116,7 @@ img {vertical-align: middle;}
   z-index: 1;
 }
 }
-@media (min-width: 840px) {
+@media (min-width: 960px) {
 .image3 {
   background-image: url("../Images/cover3.jpg");
   background-size: cover;
@@ -72,17 +134,36 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
   z-index: 1;
 }
+    
 }
     
     .image1, .image2, .image3 {
         -webkit-transition: 0.5s;
     }
-    
+@media (min-width: 630px) {
+    .image1:hover, .image2:hover, .image3:hover {
+        box-shadow: 0px 0px 10px rgba(255,255,255,0.6);
+        width: 75px;
+        height: 75px;
+    }
+}
+@media (min-width: 960px) {
     .image1:hover, .image2:hover, .image3:hover {
         box-shadow: 0px 0px 10px rgba(255,255,255,0.6);
         width: 20%;
         height: 135px;
     }
+}
+@media (min-width: 630px) {
+    .slideMargins {
+        margin-top: -120px;
+    }
+}
+@media (min-width: 960px) {
+    .slideMargins {
+        margin-top: -190px;
+    }
+}
 
 .fade000 {
   -webkit-animation-name: fade000;

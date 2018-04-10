@@ -51,13 +51,18 @@ body {
     height: 200px;
 }
 /*NAVBAR MEDIAS*/
-@media (max-width: 840px) {
+@media (min-width: 500px) {
+    .navbar {
+            padding: .5rem 2% !important;
+    }
+}
+@media (min-width: 630px) {
     .navbar {
             padding: .5rem 50% !important;
     }
 }
-@media (max-width: 1080px) {
+@media (min-width: 1080px) {
     .navbar {
-            padding: .5rem 50% !important;
+            padding: .5rem 2% !important;
     }
 }

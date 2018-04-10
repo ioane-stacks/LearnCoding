@@ -6158,6 +6158,12 @@ button.bg-danger:focus {
         margin-right:-15px;
     }
 }
+@media (min-width: 1030px) {
+    .bg-light2 {
+        float: right;
+    }
+}
+
 
 
 a.bg-light:hover, a.bg-light:focus,

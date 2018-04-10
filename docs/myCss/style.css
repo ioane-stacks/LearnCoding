@@ -9,7 +9,7 @@ body {
     height: 70px;
     padding: 15px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-    z-index:1;
+    z-index:99;
 }
 .logoNameFont {
     font-family: "BPG ExtraSquare Mtavruli";
@@ -19,7 +19,7 @@ body {
     position: absolute;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    z-index:1;
+    z-index:99;
 }
 .logoNameFont a{
     text-decoration: none !important ;
@@ -54,15 +54,18 @@ body {
 @media (min-width: 500px) {
     .navbar {
             padding: .5rem 2% !important;
+        z-index: 2;
     }
 }
 @media (min-width: 630px) {
     .navbar {
             padding: .5rem 50% !important;
+        z-index: 2;
     }
 }
-@media (min-width: 1080px) {
+@media (min-width: 1040px) {
     .navbar {
             padding: .5rem 2% !important;
+        z-index: 2;
     }
 }

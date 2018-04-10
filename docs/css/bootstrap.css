@@ -6142,7 +6142,18 @@ button.bg-danger:focus {
     margin-top: -1px;
     float: right;
 }
-@media (max-width: 840px) {
+@media (min-width: 380px) {
+    .bg-light2 {
+        margin-right:-15px;
+        padding-left: 100% !important;
+    }
+}
+@media (min-width: 630px) {
+    .bg-light2 {
+        margin-right:-15px;
+    }
+}
+@media (min-width: 960px) {
     .bg-light2 {
         margin-right:-15px;
     }

@@ -1,3 +1,0 @@
-# ioanStuff
-
-Hello World

@@ -70,3 +70,36 @@ body {
         z-index: 2;
     }
 }
+@media only screen and (min-width: 260px) {
+.containerMargin {
+    margin-top: 20px;
+    position: static;
+}
+@media only screen and (min-width: 630px) {
+.containerMargin {
+    margin-top: 50px;
+    position: static;
+}
+}
+@media only screen and (min-width: 960px) {
+.containerMargin {
+    margin-top: 60px;
+    position: static;
+}
+}
+.lineImage {
+    background-image: url('../Images/Lines/Line.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:auto;
+    height: 25px;
+    background-position: center;
+    position: relative;
+}
+    .headerfont {
+        font-family: "BPG ExtraSquare Mtavruli";
+        text-align: center;
+        font-size: 45px;
+        font-weight: 30;
+        margin-top: 15px;
+    }

@@ -97,9 +97,25 @@ body {
     position: relative;
 }
     .headerfont {
-        font-family: "BPG ExtraSquare Mtavruli";
+        font-family: "Courier";
         text-align: center;
-        font-size: 45px;
         font-weight: 30;
         margin-top: 15px;
+        color: #333333;
+    }
+    @media (min-width: 260px) {
+        .headerfont {
+            font-size: 20px;
+        }
+    }
+    @media (min-width: 630px) {
+        .headerfont {
+            font-size: 36px;
+        }
+    }
+    
+    @media (min-width: 960px) {
+        .headerfont {
+            font-size: 45px;
+        }
     }

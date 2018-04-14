@@ -126,19 +126,36 @@ body {
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     }
+    .videoControls {
+        width: 80%;
+        margin-left: 10.33333333%;
+        margin-top: 60px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.7);
+    }
     
     .myButton {
         width: 80%;
         height: 100px;
         margin-left:10.333333%;
-        margin-top: 20px;
+        margin-top: 60px;
         margin-bottom: 40px;
-        font-family: "BPG ExtraSquare Mtavruli";
+        font-family: Tw Cen MT;
+        font-weight: 400;
         font-size: 36px;
-        color: gray;
+        color: #333333;
         background-color: transparent;
-        border: 3px solid gray;
+        border: 3px solid #0A1D21;
         border-radius: 10px;
         cursor: pointer;
+        -webkit-transition: 0.3s;
+    }
+    .myButton:hover {
+        background-color: #0A1D21;
+        box-shadow: 0 5px 13px black;
+        color: white;
+    }
+    .myButton:active {
+        box-shadow: 0 5px 30px black;
+        color: white;
     }
     

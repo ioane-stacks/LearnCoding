@@ -82,6 +82,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="container">
             <!--FIRST-->
             <div class="row">
@@ -120,15 +121,19 @@
             </div>
         </div>
         
+        
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                <video class="videoControls" controls>
+                    <button id="playButton" onclick="playVid()" class="playButton">play</button>
+                    <button id="pauseButton" onclick="pauseVid()" class="pauseButton">=</button>
+                <video id="vidCon" class="videoControls" >
                     <source src="https://goo.gl/XLjvsL" type="video/mp4">
                 </video>
                 </div>
             </div>
         </div>
+        
         
         <div class="container containerMargin">
             <div class="row">
@@ -187,6 +192,23 @@ function showSlides(n) {
             }
         </script>
             </hgroup>-->
-        
+        <hgroup>
+            <script>
+                var myVid = document.getElementById("vidCon");
+                var plbutton = document.getElementById("playButton")
+                var pabutton = document.getElementById("pauseButton");
+                function playVid() {
+                    myVid.play();
+                    plbutton.style.visibility = "hidden";
+                    pabutton.style.visibility = "visible";
+                }
+                function pauseVid() {
+                    myVid.pause();
+                    plbutton.style.visibility = "visible";
+                    pabutton.style.visibility = "hidden";
+                }
+                
+            </script>
+        </hgroup>
     </body>
 </html>

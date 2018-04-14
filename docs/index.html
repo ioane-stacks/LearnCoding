@@ -127,7 +127,7 @@
                 <div class="col-12">
                     <div class="videoBorderContent" >
                     <button id="playButton" onclick="playVid()" class="playButton">play</button>
-                    <button id="pauseButton" onclick="pauseVid()" class="pauseButton">=</button>
+                    <button id="pauseButton" onclick="pauseVid()" onmousemove="paShow()"  onmouseout="paHide()" class="pauseButton">=</button>
                 <video id="vidCon" class="videoControls" >
                     <source src="Videos/video.mp4" type="video/mp4">
                 </video>
@@ -201,7 +201,7 @@ function showSlides(n) {
                 var pabutton = document.getElementById("pauseButton");
                 function playVid() {
                     myVid.play();
-                    pabutton.style.opacity = 1;
+                    pabutton.style.opacity = 0.4;
                     plbutton.style.opacity = 0;
                     plbutton.style.visibility = "hidden";
                     pabutton.style.visibility = "visible";
@@ -212,6 +212,13 @@ function showSlides(n) {
                     plbutton.style.opacity = 1;
                     plbutton.style.visibility = "visible";
                     pabutton.style.visibility = "hidden";
+                }
+                
+                function paHide() {
+                    pabutton.style.opacity = 0.4;
+                }
+                function paShow() {
+                    pabutton.style.opacity = 1;
                 }
                 
             </script>

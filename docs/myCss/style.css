@@ -179,6 +179,9 @@ body {
         box-shadow: 0 5px 30px black;
         color: white;
     }
+    .playButton, .pauseButton {
+        -webkit-transition: 0.3s;
+    }
     .playButton {
         width: 100px;
         height: 100px;
@@ -211,5 +214,6 @@ body {
         font-size: 34px;
         cursor: pointer;
         visibility: hidden;
+        opacity: 0;
     }
     

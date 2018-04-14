@@ -102,9 +102,10 @@ body {
         font-weight: 30;
         margin-top: 15px;
         color: #333333;
+        font-size: 45px;
     }
     @media (min-width: 260px) {
-        .headerfont {
+        .headerfont { 
             font-size: 20px;
         }
     }
@@ -118,4 +119,22 @@ body {
         .headerfont {
             font-size: 45px;
         }
+    }
+    
+    .myButton {
+        width: 80%;
+        height: 100px;
+        margin-left:10.333333%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-family: "BPG ExtraSquare Mtavruli";
+        font-size: 36px;
+        color: gray;
+        background-color: transparent;
+        border: 3px solid gray;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    hr {
+        width:80%;
     }

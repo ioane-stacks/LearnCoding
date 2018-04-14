@@ -88,11 +88,11 @@ body {
 }
 }
 .lineImage {
-    background-image: url('../Images/Lines/Line.png');
+    background-image: url('../Images/Lines/brushedLine.png');
     background-repeat: no-repeat;
     background-size: cover;
     width:auto;
-    height: 25px;
+    height: 3px;
     background-position: center;
     position: relative;
 }
@@ -120,6 +120,10 @@ body {
             font-size: 45px;
         }
     }
+    hr {
+        background-color: gray;
+        height: 3px;
+    }
     
     .myButton {
         width: 80%;
@@ -135,6 +139,4 @@ body {
         border-radius: 10px;
         cursor: pointer;
     }
-    hr {
-        
-    }
+    

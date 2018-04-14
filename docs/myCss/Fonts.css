@@ -7,3 +7,8 @@
     font-family: "Courier";
     src: url(../Fonts/coure.fon) format("truetype");
 }
+
+@font-face {
+    font-family: "TCM";
+    src: url(../Fonts/TCM.TTF) format("truetype");
+}

@@ -60,7 +60,7 @@ body {
     }
     @media (min-width: 576px) {
     .navbar {
-            padding: .5rem 47% !important;
+            padding: .5rem 49% !important;
         z-index: 2;
         }
         .nav-link {

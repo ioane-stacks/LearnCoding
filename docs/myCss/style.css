@@ -52,30 +52,46 @@ body {
 }
 /*NAVBAR MEDIAS*/
 
-@media (min-width: 576px) {
-    .navbar {
-            padding: .5rem 2% !important;
-        z-index: 2;
+
+@media (min-width: 270px) {
+    .nav-link {
+        margin-left: -300%;
+        }
     }
-}
-@media (min-width: 768px) {
+    @media (min-width: 576px) {
+    .navbar {
+            padding: .5rem 47% !important;
+        z-index: 2;
+        }
+        .nav-link {
+        margin-left: -5px;
+        }
+    }
+    @media (min-width: 768px) {
     .navbar {
             padding: .5rem 50% !important;
         z-index: 2;
+        }
+        .nav-link {
+        margin-left: -5px;
+        }
     }
-}
-@media (min-width: 992px) {
+    @media (min-width: 992px) {
     .navbar {
             padding: .5rem 2% !important;
         z-index: 2;
+        }
+        .nav-link {
+        margin-left: 0;
+        }
     }
-}
-@media (min-width: 1200px) {
+    @media (min-width: 1200px) {
     .navbar {
             padding: .5rem 2% !important;
         z-index: 2;
+        }
+        
     }
-}
 @media only screen and (min-width: 260px) {
 .containerMargin {
     margin-top: 20px;
@@ -185,4 +201,3 @@ body {
         box-shadow: 0 5px 30px black;
         color: white;
     }
-    

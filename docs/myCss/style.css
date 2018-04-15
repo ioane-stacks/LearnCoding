@@ -55,7 +55,7 @@ body {
 
 @media (min-width: 270px) {
     .nav-link {
-        margin-left: -300%;
+        margin-left: -390%;
         }
     }
     @media (min-width: 576px) {

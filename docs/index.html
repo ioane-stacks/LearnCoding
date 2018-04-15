@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/bootstrap-grid.css">
         <link rel="stylesheet" href="myCss/style.css">
         <link rel="stylesheet" href="myCss/Fonts.css">
+        <link rel="stylesheet" href="myCss/Videoplayer.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -127,7 +128,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="videoBorderContent" >
-                    <button id="playButton" onclick="playVid()" class="playButton">play</button>
+                    <button id="playButton" onmousemove="plMove()" onclick="playVid()" class="playButton">play</button>
                     <button id="pauseButton" onclick="pauseVid()" onmousemove="paShow()"  onmouseout="paHide()" class="pauseButton">=</button>
                 <video id="vidCon" class="videoControls" >
                     <source src="Videos/video.mp4" type="video/mp4">
@@ -221,6 +222,7 @@ function showSlides(n) {
                 function paShow() {
                     pabutton.style.opacity = 1;
                 }
+                
                 
             </script>
         </hgroup>

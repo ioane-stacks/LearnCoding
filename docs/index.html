@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>LearnCoding</title>
+        <link rel="stylesheet" href="css/bootstrap-reboot.css">
+        <link rel="stylesheet" href="myCss/slideShow.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.css">
+        <link rel="stylesheet" href="myCss/style.css">
+        <link rel="stylesheet" href="myCss/Fonts.css">
+        <link rel="stylesheet" href="myCss/Videoplayer.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+        <header>
+                <div class="headerImage">
+                    <div class="logo logoNameFont"><a href="index.html">LearnCoding</a></div>
+                    
+                    
+                    
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light2" >
+                        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item navBarCTL">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item navBarCTL">
+                                    <a class="nav-link" href="#">Tutorials</a>
+                                </li>
+                                <li class="nav-item navBarCTL">
+                                    <a class="nav-link" href="#">Examples</a>
+                                </li>
+                                <li class="nav-item navBarCTL">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item navBarCTL">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+        </header>
+        
+        <!--SLIDESHOW-->
+        <div class="container-fluid slideShowPadding">
+            <div class="slideshow-container">
+
+<div class="mySlides fade000">
+  <img src="Images/cover1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade000">
+  <img src="Images/cover2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade000">
+  <img src="Images/cover3.jpg" style="width:100%">
+</div>
+</div>
+<br>
+<div style="position:inherit">
+<div class="slideMargins" style="text-align:center;position:relative;">
+  <span class="image1" onclick="currentSlide(1)"></span> 
+  <span class="image2" onclick="currentSlide(2)"></span> 
+  <span class="image3" onclick="currentSlide(3)"></span> 
+</div>
+    </div>
+        </div>
+        <!--END SLIDESHOW-->
+        
+        <div class="container containerMargin">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mhr"></div>
+                    <p class="headerfont" >The language for building Everything</p>
+                    <div class="mhr"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <!--FIRST-->
+            <div class="row">
+                <div class="col-4">
+                    <button class="myButton">HTML</button>
+                </div>
+                <div class="col-4">
+                    <button class="myButton">CSS</button>
+                </div>
+                <div class="col-4">
+                    <button class="myButton">JS</button>
+                </div>
+            </div>
+                <!--SECOND-->
+                <div class="row">
+                <div class="col-4">
+                    <button class="myButton">C#</button>
+                </div>
+                <div class="col-4">
+                    <button class="myButton">C++</button>
+                </div>
+                <div class="col-4">
+                    <button class="myButton">C</button>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="container containerMargin">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mhr"></div>
+                    <p class="headerfont" >Learn with videos</p>
+                    <div class="mhr"></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="videoBorderContent" >
+                    <button id="playButton" onclick="playVid()" class="playButton">play</button>
+                    <button id="pauseButton" onclick="pauseVid()" onmousemove="paShow()"  onmouseout="paHide()" class="pauseButton">=</button>
+                <video id="vidCon" class="videoControls" >
+                    <source src="Videos/video.mp4" type="video/mp4">
+                </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="container containerMargin">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mhr"></div>
+                    <p class="headerfont" >Contact</p>
+                    <div class="mhr"></div>
+                </div>
+            </div>
+        </div>
+        
+        <hgroup>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            </hgroup>
+        <hgroup>
+        <script>
+var slideIndex = 2;
+showSlides(slideIndex);
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var imageSize1 = document.getElementsByClassName("image1");
+  var imageSize2 = document.getElementsByClassName("image2");
+  var imageSize3 = document.getElementsByClassName("image3");
+
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";  
+  /*dots[slideIndex-1].className += " active";*/
+    
+}
+</script>
+            </hgroup>
+        <!--<hgroup>
+        <script>
+            function navControl() {
+            var thisDown = document.getElementById("willDown").style;
+                if(thisDown.marginTop === "-1px") {
+                    thisDown.marginTop = "-1px";
+                    thisDown.float = "right";
+                }
+                else {
+                    thisDown.marginTop = "-1px";
+                    thisDown.float = "right";
+                }
+            }
+        </script>
+            </hgroup>-->
+        <hgroup>
+            <script>
+                var myVid = document.getElementById("vidCon");
+                var plbutton = document.getElementById("playButton")
+                var pabutton = document.getElementById("pauseButton");
+                function playVid() {
+                    myVid.play();
+                    pabutton.style.opacity = 0.2;
+                    plbutton.style.opacity = 0;
+                    plbutton.style.visibility = "hidden";
+                    pabutton.style.visibility = "visible";
+                }
+                function pauseVid() {
+                    myVid.pause();
+                    pabutton.style.opacity = 0;
+                    plbutton.style.opacity = 1;
+                    plbutton.style.visibility = "visible";
+                    pabutton.style.visibility = "hidden";
+                }
+                
+                function paHide() {
+                    pabutton.style.opacity = 0.2;
+                }
+                function paShow() {
+                    pabutton.style.opacity = 1;
+                }
+                
+                
+            </script>
+        </hgroup>
+    </body>
+</html>
